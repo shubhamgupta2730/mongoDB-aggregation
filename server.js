@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 dbConnect();
 
 // Routes
-//app.use('/properties', propertyRoutes);
+app.use('/properties', propertyRoutes);
 
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
