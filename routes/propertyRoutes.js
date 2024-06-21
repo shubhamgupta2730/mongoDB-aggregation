@@ -1,6 +1,7 @@
 const express = require('express');
 const { propertyTypes } = require('../controllers/propertyController');
-const {listOfProperties} = require('../controllers/listOfPropertyController');
+const { listOfProperties } = require('../controllers/listOfPropertyController');
+
 
 const router = express.Router();
 
@@ -10,6 +11,8 @@ router.get('/property-types', propertyTypes);
 
 
 //router for getting all the property list based on given property name: 
-router.get('/listOfProperties', listOfProperties );
+router.get('/listOfProperties', listOfProperties);
+
+
 
 module.exports = router;
