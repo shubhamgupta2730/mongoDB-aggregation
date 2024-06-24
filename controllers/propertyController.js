@@ -28,7 +28,7 @@ const propertyTypes = async (req, res) => {
           _id: 1,
           property_type: "$_id",
           totalProperties: 1,
-          names:1
+          names: 1
         }
       },
       {
@@ -44,7 +44,7 @@ const propertyTypes = async (req, res) => {
         $limit: parseInt(limit)
       }
     ]);
-    
+
     res.status(200).json({
       propertyList,
       currentPage: parseInt(pageNo),
